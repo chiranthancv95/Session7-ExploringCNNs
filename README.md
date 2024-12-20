@@ -112,7 +112,15 @@ Best Test Accuracy: 99.44%% (10th and consistent since then)<br/>
 ####Analysis:<br/>
 The model seems to have improved consistency and improved the train accuracy as well.
 
+##Screenshot of using EC2 on AWS:
 
+![EC2 Screenshot](./screenshot/Screenshot.png)
+
+<!-- Alternatively, using HTML for more control over size -->
+<img src="![EC2 Screenshot](./screenshot/Screenshot.png)
+" alt="EC2 Screenshot" width="600"/>
+
+---------------------------------------------------------------------------------------------------------------------
 
 ## Final Logs
 EPOCH: 0
