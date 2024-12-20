@@ -66,53 +66,55 @@ Simply run all cells in sequence to train and evaluate the model.
 
 ## Steps taken to achieve
 
-###Step-1:
+### Step-1:
 
-####Target:
+#### Target:
 
 Make a lighter model under 8k parameters from the original 13,808 parameters
 
-####Results:
+#### Results:
 Parameters: 7,776<br/>
 Best Train Accuracy: 99.00<br/>
 Best Test Accuracy: 99.32% (13th Epoch), 99.31% (14th Epoch)<br/>
 
-####Analysis:<br/>
+#### Analysis:<br/>
 Find a good foundational model architecture.<br/>
 Now have to improve the consistency and improve the train accuracy.
 
 ---------------------------------------------------------------------------------------------------------------------
 
-###Step-2:
+### Step-2:
 
-####Target:
+#### Target:
 
 Added rotation augmentation to increase the test accuracy more and make the model more robust.
 
-####Results:
+#### Results:
 Parameters: 7,776<br/>
 Best Train Accuracy: 98.72<br/>
 Best Test Accuracy: 99.34% (14th Epoch)<br/>
 
-####Analysis:<br/>
-Find a good foundational model architecture which is robust after adding augmentation.<br/>
-Now have to improve the consistency and improve the train accuracy.
----------------------------------------------------------------------------------------------------------------------
-###Step-3:
+#### Analysis:<br/>
 
-####Target:
+Find a good foundational model architecture which is robust after adding augmentation.<br/>
+Now have to improve the consistency and improve the train accuracy.<br/>
+
+---------------------------------------------------------------------------------------------------------------------
+### Step-3:
+
+#### Target:
 
 Added weight_decay in optimizer to penalize large weights and reduced the Dropout value to reduce the variability of the model since the model was not learning better than before(Means training accuracy was not improving)<br/>
 
-####Results:
+#### Results:
 Parameters: 7,776<br/>
 Best Train Accuracy: 99.30<br/>
 Best Test Accuracy: 99.44%% (10th and consistent since then)<br/>
 
-####Analysis:<br/>
+#### Analysis:<br/>
 The model seems to have improved consistency and improved the train accuracy as well.
 
-##Screenshot of using EC2 on AWS:
+## Screenshot of using EC2 on AWS:
 
 ![EC2 Screenshot](./screenshot/Screenshot.png)
 
